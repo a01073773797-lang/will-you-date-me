@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta name="theme-color" content="#fff3f7">
+  <title>우리의 데이트 💗</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gaegu:wght@400;700&family=Jua&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="floating-hearts" aria-hidden="true">
+    <span>♡</span><span>♥</span><span>♡</span><span>✦</span><span>♥</span>
+  </div>
+
+  <main class="app">
+    <div class="card">
+      <div class="dots" aria-hidden="true">
+        <i class="active"></i><i></i><i></i><i></i>
+      </div>
+
+      <section class="page active" id="page1">
+        <div class="emoji big">🌷</div>
+        <p class="eyebrow">A LITTLE QUESTION</p>
+        <h1>나랑 데이트 할래?</h1>
+        <p class="sub">오늘부터 우리만의 특별한 하루를<br>만들어 볼까? 💗</p>
+        <button class="main-btn" onclick="go(2)">응 좋아 ♥</button>
+      </section>
+
+      <section class="page" id="page2">
+        <div class="emoji big">🥹</div>
+        <p class="eyebrow">WAIT...</p>
+        <h1>잠시만.. 좋다고??</h1>
+        <p class="sub">진짜지? 장난 아니지?<br>나 지금 너무 신나는데 😭💗</p>
+        <button class="main-btn" onclick="go(3)">응응응 💕</button>
+      </section>
+
+      <section class="page" id="page3">
+        <div class="emoji">🍽️</div>
+        <p class="eyebrow">OUR DATE</p>
+        <h1>그럼! 이 날<br>뭐 땡길 것 같아?</h1>
+        <p class="sub">먹고 싶은 걸 골라줘!</p>
+
+        <div class="choices">
+          <button onclick="choose('🍕 피자')"><span>🍕</span>피자</button>
+          <button onclick="choose('🍣 스시')"><span>🍣</span>스시</button>
+          <button onclick="choose('🍔 햄버거')"><span>🍔</span>햄버거</button>
+          <button onclick="choose('🍝 파스타')"><span>🍝</span>파스타</button>
+          <button onclick="choose('🍚 국밥')"><span>🍚</span>국밥</button>
+          <button onclick="choose('🍜 라면')"><span>🍜</span>라면</button>
+        </div>
+      </section>
+
+      <section class="page" id="page4">
+        <div class="emoji big">💗</div>
+        <p class="eyebrow">IT'S A DATE!</p>
+        <h1>좋아! 결정했어 🥰</h1>
+        <div class="result-box">
+          <span>우리의 메뉴</span>
+          <strong id="result">피자</strong>
+        </div>
+        <p class="sub">그날 맛있게 먹고<br>재밌게 놀자! 🌷</p>
+        <button class="sub-btn" onclick="restart()">처음부터 다시 보기</button>
+      </section>
+    </div>
+
+    <p class="footer">made with ♡</p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
